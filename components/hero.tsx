@@ -11,7 +11,7 @@ export function Hero() {
         src="/prosmileone.jpg"
         alt=""
         fill
-        className="object-cover"
+        className="object-cover animate-slow-zoom"
         priority
         quality={90}
       />
@@ -24,29 +24,29 @@ export function Hero() {
           {/* Left - Main content (3 cols) */}
           <div className="flex flex-col gap-8 lg:col-span-3">
             {/* Gold accent line + badge */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 animate-fade-up delay-1">
               <div className="h-px w-10 bg-accent" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-accent">
                 Premium Dental Care
               </span>
             </div>
 
-            <h1 className="text-balance font-serif text-4xl font-bold leading-[1.1] text-primary-foreground sm:text-5xl lg:text-6xl">
-              Your Smile Deserves
+<h1 className="animate-fade-up delay-2 text-balance font-serif text-4xl font-bold leading-[1.1] text-primary-foreground sm:text-5xl lg:text-6xl">
+                Your Smile Deserves
               <span className="block text-accent">the Best Care</span>
             </h1>
 
-            <p className="max-w-lg text-pretty text-base leading-relaxed text-primary-foreground/80 lg:text-lg">
+<p className="animate-fade-up delay-3 max-w-lg text-pretty text-base leading-relaxed text-primary-foreground/80 lg:text-lg">
               Personalized, gentle and affordable dental treatments with
               modern technology at Prosmiles Dental, Indiranagar, Bengaluru.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <a href="tel:08123557113">
+<div className="animate-fade-up delay-4 flex flex-col gap-4 sm:flex-row">
+                <a href="tel:08123557113">
                 <Button
                   size="lg"
-                  className="w-full gap-2.5 rounded-sm bg-accent px-8 text-sm font-semibold uppercase tracking-wider text-accent-foreground hover:bg-accent/90 sm:w-auto"
+className="w-full gap-2.5 rounded-sm bg-accent px-8 text-sm font-semibold uppercase tracking-wider text-accent-foreground hover:bg-accent/90 sm:w-auto transition-all duration-300 hover:scale-105 active:scale-95"
                 >
                   <Phone className="h-4 w-4" />
                   Call Now
@@ -56,7 +56,7 @@ export function Hero() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full gap-2.5 rounded-sm border-primary-foreground/20 bg-transparent px-8 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground sm:w-auto"
+className="w-full gap-2.5 rounded-sm bg-accent px-8 text-sm font-semibold uppercase tracking-wider text-accent-foreground hover:bg-accent/90 sm:w-auto transition-all duration-300 hover:scale-105 active:scale-95"
                 >
                   <CalendarDays className="h-4 w-4" />
                   Book Appointment
